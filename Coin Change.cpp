@@ -7,7 +7,7 @@ int ways[8192];
 void SaveWays(){
     ways[0] = 1;
     for (int i = 0; i < 5; ++i)
-        for (int j = coins[i]; j < 8192; j++)
+        for (int j = coins[i]; j < 8192; j++) 
              ways[j] += ways[j - coins[i]];
 }
 int main(){   
